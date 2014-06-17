@@ -1,5 +1,7 @@
 body {
   padding: 15px 20px; }
+  body a, body a:hover, body a:visited {
+    color: #34495e; }
 
 .jumbotron {
   border-radius: 20px;
