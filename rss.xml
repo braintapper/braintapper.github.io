@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	    <title>Braintapper Blog</title>
+	    <link>https://www.braintapper.com</link>
+	    <description>Latest articles from the Braintapper Blog</description><item>
+	<title>Welcome to the New Site</title>
+	<link>https://www.braintapper.com/blog/welcome-to-the-new-site</link>
+	<description>Well it&#39;s been a while since the site has been updated. A long while, actually.
+It&#39;s been a long time coming, but I forced myself over the holidays to revamp the site, and here it is.
+Things are going to be rough for a little while, as this is a work in progress, and I&#39;ve opted to go live with a buggy site as opposed to leaving a placeholder page up. This should force me to iterate more quickly and more often.
+So before I rebuilt the site, I went through a lot of hand-wringing...</description>
+	<pubDate>Wed Jan 01 2020 12:00:00 GMT-0500 (Eastern Standard Time)</pubDate>
+</item>
+</channel>
+</rss>
