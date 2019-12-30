@@ -4,6 +4,14 @@
 	    <title>Braintapper Blog</title>
 	    <link>https://www.braintapper.com</link>
 	    <description>Latest articles from the Braintapper Blog</description><item>
+	<title>So I Wrote a Database Migrations NPM</title>
+	<link>https://www.braintapper.com/blog/pg-forward-migrations</link>
+	<description>I&#39;ve been working on making Docker containers of my personal Nodejs projects lately, and for those that rely on a relational database (namely Postgresql), I wanted to be able to run database migrations on them locally to make updates easier. To be clear, I&#39;m not talking about data migrations, which are a completely different thing.
+For database migrations outside of Ruby on Rails, I&#39;ve been using Liquibase, and more recently, Flyway. They&#39;re both perfectly fine tools, but they...</description>
+	<pubDate>Mon Dec 30 2019 12:00:00 GMT-0500 (Eastern Standard Time)</pubDate>
+</item>
+
+<item>
 	<title>Welcome to the New Site</title>
 	<link>https://www.braintapper.com/blog/welcome-to-the-new-site</link>
 	<description>Well it&#39;s been a while since the site has been updated. A long while, actually.
