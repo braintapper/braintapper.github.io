@@ -1,7 +1,12 @@
 [
   {
-    "title": "Welcome to the New Site",
-    "timestamp": "2020-01-01T17:00:00.000Z",
-    "slug": "welcome-to-the-new-site"
+    "title": "Check out my Articles",
+    "timestamp": "2020-01-06T17:02:00.000Z",
+    "slug": "check-out-my-articles-section"
+  },
+  {
+    "title": "Convert an Outlook PST to JSON",
+    "timestamp": "2020-01-06T17:00:00.000Z",
+    "slug": "converting-an-outlook-pst-to-json"
   }
 ]

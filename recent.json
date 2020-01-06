@@ -1,5 +1,37 @@
 [
   {
+    "title": "Check out my Articles",
+    "tags": null,
+    "publish_date": "2020-01-06 12:02",
+    "updated_date": null,
+    "featured": false,
+    "author": "Steven Ng",
+    "__content": "\r\nAs mentioned in my first post, I have an [Articles](/articles) section on the site where I'll be posting evergreen articles that will continue to be updated over time.\r\n\r\nI have two articles in place now:\r\n\r\n1. [The Windows Software I use to Stay Productive](/articles/my-favorite-self-hosted-apps) - This is a list of software that I recommend for Windows users.\r\n2. [My Favorite Self-Hosted Applications](/articles/useful-windows-apps) - This is a list of mostly Docker containers (for now) that I recommend running in your own environment.\r\n\r\nI have a queue of other useful articles on their way, and will announce their creation or updates here on the blog.\r\n",
+    "html": "<p>As mentioned in my first post, I have an <a href=\"/articles\">Articles</a> section on the site where I&#39;ll be posting evergreen articles that will continue to be updated over time.</p>\n<p>I have two articles in place now:</p>\n<ol>\n<li><a href=\"/articles/my-favorite-self-hosted-apps\">The Windows Software I use to Stay Productive</a> - This is a list of software that I recommend for Windows users.</li>\n<li><a href=\"/articles/useful-windows-apps\">My Favorite Self-Hosted Applications</a> - This is a list of mostly Docker containers (for now) that I recommend running in your own environment.</li>\n</ol>\n<p>I have a queue of other useful articles on their way, and will announce their creation or updates here on the blog.</p>\n",
+    "timestamp": "2020-01-06T17:02:00.000Z",
+    "year": 2020,
+    "month": 1,
+    "month_name": "January",
+    "day": 6,
+    "slug": "check-out-my-articles-section"
+  },
+  {
+    "title": "Convert an Outlook PST to JSON",
+    "tags": null,
+    "publish_date": "2020-01-06 12:00",
+    "updated_date": null,
+    "featured": false,
+    "author": "Steven Ng",
+    "__content": "\r\nI had to archive an Outlook mailbox to a PST file recently, but I'm not a huge fan of using Outlook for finding e-mails.\r\n\r\nI looked around for tools that would convert a PST to JSON so I could load my data into something like Postgresql, but I didn't\r\nfind anything that was free (I only need to do the conversion once).\r\n\r\nI ended up searching for an NPM that could extract objects from a PST, and found [epfromer's pst-extractor.](https://github.com/epfromer/pst-extractor).\r\n\r\nUsing that NPM, I made a simple command line tool for Windows that can extract a PST into a JSON file.\r\n\r\nSince my requirements were modest (one time use, reasonably sized PST file), I didn't really design it to scale.\r\nIt doesn't support password protected PSTs, and I can't guarantee that it will run on a giant PST file if your machine doesn't have enough memory, but\r\nit's there if you need the functionality.\r\n\r\nTo use it, just download the [executable from Github](https://github.com/braintapper/pst_to_json/releases).\r\n\r\nThe command structure is pretty straightforward. From the directory of the executable, use:\r\n\r\n```\r\npst_to_json -s /path/to/file.pst -d /path/to/output.json\r\n```\r\n\r\nThere are some [additional switches](https://github.com/braintapper/pst_to_json/blob/master/readme.md), but the above command is all you need to accomplish the task.\r\n",
+    "html": "<p>I had to archive an Outlook mailbox to a PST file recently, but I&#39;m not a huge fan of using Outlook for finding e-mails.</p>\n<p>I looked around for tools that would convert a PST to JSON so I could load my data into something like Postgresql, but I didn&#39;t\nfind anything that was free (I only need to do the conversion once).</p>\n<p>I ended up searching for an NPM that could extract objects from a PST, and found <a href=\"https://github.com/epfromer/pst-extractor\">epfromer&#39;s pst-extractor.</a>.</p>\n<p>Using that NPM, I made a simple command line tool for Windows that can extract a PST into a JSON file.</p>\n<p>Since my requirements were modest (one time use, reasonably sized PST file), I didn&#39;t really design it to scale.\nIt doesn&#39;t support password protected PSTs, and I can&#39;t guarantee that it will run on a giant PST file if your machine doesn&#39;t have enough memory, but\nit&#39;s there if you need the functionality.</p>\n<p>To use it, just download the <a href=\"https://github.com/braintapper/pst_to_json/releases\">executable from Github</a>.</p>\n<p>The command structure is pretty straightforward. From the directory of the executable, use:</p>\n<pre><code>pst_to_json -s /path/to/file.pst -d /path/to/output.json</code></pre><p>There are some <a href=\"https://github.com/braintapper/pst_to_json/blob/master/readme.md\">additional switches</a>, but the above command is all you need to accomplish the task.</p>\n",
+    "timestamp": "2020-01-06T17:00:00.000Z",
+    "year": 2020,
+    "month": 1,
+    "month_name": "January",
+    "day": 6,
+    "slug": "converting-an-outlook-pst-to-json"
+  },
+  {
     "title": "So I Wrote a Database Migrations NPM",
     "tags": null,
     "publish_date": "2019-12-30 12:00",

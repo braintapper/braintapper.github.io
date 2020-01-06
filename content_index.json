@@ -13,6 +13,20 @@
     "url": "/blog/welcome-to-the-new-site",
     "timestamp": "2019-12-29T17:00:00.000Z"
   },
+  "check-out-my-articles-section": {
+    "title": "Check out my Articles section",
+    "slug": "check-out-my-articles-section",
+    "type": "blog",
+    "url": "/blog/check-out-my-articles-section",
+    "timestamp": "2020-01-06T17:02:00.000Z"
+  },
+  "converting-an-outlook-pst-to-json": {
+    "title": "Converting an Outlook PST to JSON",
+    "slug": "converting-an-outlook-pst-to-json",
+    "type": "blog",
+    "url": "/blog/converting-an-outlook-pst-to-json",
+    "timestamp": "2020-01-06T17:00:00.000Z"
+  },
   "my-favorite-self-hosted-apps": {
     "title": "My Favorite Self-Hosted Applications",
     "slug": "my-favorite-self-hosted-apps",

@@ -4,6 +4,30 @@
 	    <title>Braintapper Blog</title>
 	    <link>https://www.braintapper.com</link>
 	    <description>Latest articles from the Braintapper Blog</description><item>
+	<title>Check out my Articles</title>
+	<link>https://www.braintapper.com/blog/check-out-my-articles-section</link>
+	<description>As mentioned in my first post, I have an Articles section on the site where I&#39;ll be posting evergreen articles that will continue to be updated over time.
+I have two articles in place now:
+
+The Windows Software I use to Stay Productive - This is a list of software that I recommend for Windows users.
+My Favorite Self-Hosted Applications - This is a list of mostly Docker containers (for now) that I recommend running in your own environment.
+
+I have a queue of other useful articles on their...</description>
+	<pubDate>Mon Jan 06 2020 12:02:00 GMT-0500 (Eastern Standard Time)</pubDate>
+</item>
+
+<item>
+	<title>Convert an Outlook PST to JSON</title>
+	<link>https://www.braintapper.com/blog/converting-an-outlook-pst-to-json</link>
+	<description>I had to archive an Outlook mailbox to a PST file recently, but I&#39;m not a huge fan of using Outlook for finding e-mails.
+I looked around for tools that would convert a PST to JSON so I could load my data into something like Postgresql, but I didn&#39;t
+find anything that was free (I only need to do the conversion once).
+I ended up searching for an NPM that could extract objects from a PST, and found epfromer&#39;s pst-extractor..
+Using that NPM, I made a simple command line tool for Windows...</description>
+	<pubDate>Mon Jan 06 2020 12:00:00 GMT-0500 (Eastern Standard Time)</pubDate>
+</item>
+
+<item>
 	<title>So I Wrote a Database Migrations NPM</title>
 	<link>https://www.braintapper.com/blog/pg-forward-migrations</link>
 	<description>I&#39;ve been working on making Docker containers of my personal Nodejs projects lately, and for those that rely on a relational database (namely Postgresql), I wanted to be able to run database migrations on them locally to make updates easier. To be clear, I&#39;m not talking about data migrations, which are a completely different thing.
