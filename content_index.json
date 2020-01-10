@@ -13,15 +13,22 @@
     "url": "/blog/welcome-to-the-new-site",
     "timestamp": "2019-12-29T17:00:00.000Z"
   },
+  "basecamps-guide-to-internal-communication": {
+    "title": "Basecamp's Guide To Internal Communication",
+    "slug": "basecamps-guide-to-internal-communication",
+    "type": "blog",
+    "url": "/blog/basecamps-guide-to-internal-communication",
+    "timestamp": "2020-01-10T17:04:00.000Z"
+  },
   "check-out-my-articles-section": {
-    "title": "Check out my Articles section",
+    "title": "Check out my Articles",
     "slug": "check-out-my-articles-section",
     "type": "blog",
     "url": "/blog/check-out-my-articles-section",
     "timestamp": "2020-01-06T17:02:00.000Z"
   },
   "converting-an-outlook-pst-to-json": {
-    "title": "Converting an Outlook PST to JSON",
+    "title": "Convert an Outlook PST to JSON",
     "slug": "converting-an-outlook-pst-to-json",
     "type": "blog",
     "url": "/blog/converting-an-outlook-pst-to-json",
