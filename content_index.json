@@ -13,6 +13,13 @@
     "url": "/blog/welcome-to-the-new-site",
     "timestamp": "2019-12-29T17:00:00.000Z"
   },
+  "apps-install-this-site-as-an-app": {
+    "title": "Apps > Install this site as an app",
+    "slug": "apps-install-this-site-as-an-app",
+    "type": "blog",
+    "url": "/blog/apps-install-this-site-as-an-app",
+    "timestamp": "2020-01-29T16:45:00.000Z"
+  },
   "basecamps-guide-to-internal-communication": {
     "title": "Basecamp's Guide To Internal Communication",
     "slug": "basecamps-guide-to-internal-communication",
