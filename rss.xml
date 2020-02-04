@@ -4,6 +4,15 @@
 	    <title>Braintapper Blog</title>
 	    <link>https://www.braintapper.com</link>
 	    <description>Latest articles from the Braintapper Blog</description><item>
+	<title>Clips vs. Notes</title>
+	<link>https://www.braintapper.com/blog/clips-versus-notes</link>
+	<description>All-in-one software tools can be very useful, as they can consolidate multiple functions while minimizing window proliferation, etc.
+For example, I recently got introduced to a nifty (albeit unfortunately named) little tool called Snowflake, which lets me have terminal windows and an SFTP file browser contained within a single window. While imperfect, I find it works better for me than using WinSCP.
+Snowflake, however, is a utility.  All-in-one applications in other contexts may not offer the...</description>
+	<pubDate>Tue Feb 04 2020 12:00:00 GMT-0500 (Eastern Standard Time)</pubDate>
+</item>
+
+<item>
 	<title>Apps > Install this site as an app</title>
 	<link>https://www.braintapper.com/blog/apps-install-this-site-as-an-app</link>
 	<description>Confessions of a Tab Hoarder
