@@ -55,6 +55,13 @@
     "url": "/blog/clips-versus-notes",
     "timestamp": "2020-02-04T17:00:00.000Z"
   },
+  "its-2020-and-im-still-using-coffeescript": {
+    "title": "It's 2020 and I'm <i>Still</i> Using Coffeescript",
+    "slug": "its-2020-and-im-still-using-coffeescript",
+    "type": "blog",
+    "url": "/blog/its-2020-and-im-still-using-coffeescript",
+    "timestamp": "2020-03-10T16:00:00.000Z"
+  },
   "my-favorite-self-hosted-apps": {
     "title": "My Favorite Self-Hosted Applications",
     "slug": "my-favorite-self-hosted-apps",
