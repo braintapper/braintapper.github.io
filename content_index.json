@@ -62,6 +62,20 @@
     "url": "/blog/its-2020-and-im-still-using-coffeescript",
     "timestamp": "2020-03-10T16:00:00.000Z"
   },
+  "my-curated-list-of-free-fonts-is-up": {
+    "title": "My Curated List of Free Fonts is Up",
+    "slug": "my-curated-list-of-free-fonts-is-up",
+    "type": "blog",
+    "url": "/blog/my-curated-list-of-free-fonts-is-up",
+    "timestamp": "2020-03-12T21:00:00.000Z"
+  },
+  "my-favorite-free-fonts": {
+    "title": "My Favorite Free Fonts",
+    "slug": "my-favorite-free-fonts",
+    "type": "article",
+    "url": "/articles/my-favorite-free-fonts",
+    "timestamp": "2020-03-12T21:00:00.000Z"
+  },
   "my-favorite-self-hosted-apps": {
     "title": "My Favorite Self-Hosted Applications",
     "slug": "my-favorite-self-hosted-apps",
