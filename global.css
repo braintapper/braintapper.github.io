@@ -9268,7 +9268,7 @@ b {
   background: var(--lightest-gray);
   padding: var(--text-spacing-s);
   border-radius: var(--corner-l);
-  overflow-x: scroll;
+  overflow-x: auto;
  }
 
 [type="content"] ul, .content ul {
