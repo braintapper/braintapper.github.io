@@ -55,6 +55,13 @@
     "url": "/blog/clips-versus-notes",
     "timestamp": "2020-02-04T17:00:00.000Z"
   },
+  "covid-article-up": {
+    "title": "My SARS-CoV-2/COVID-10 Links article is up",
+    "slug": "covid-article-up",
+    "type": "blog",
+    "url": "/blog/covid-article-up",
+    "timestamp": "2020-03-20T16:00:00.000Z"
+  },
   "its-2020-and-im-still-using-coffeescript": {
     "title": "It's 2020 and I'm <i>Still</i> Using Coffeescript",
     "slug": "its-2020-and-im-still-using-coffeescript",
@@ -75,6 +82,13 @@
     "type": "blog",
     "url": "/blog/my-curated-list-of-free-fonts-is-up",
     "timestamp": "2020-03-12T21:00:00.000Z"
+  },
+  "covid-info": {
+    "title": "SARS-CoV-2/COVID-19 Links",
+    "slug": "covid-info",
+    "type": "article",
+    "url": "/articles/covid-info",
+    "timestamp": "2020-03-20T16:00:00.000Z"
   },
   "my-favorite-free-fonts": {
     "title": "My Favorite Free Fonts",

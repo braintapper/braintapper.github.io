@@ -4,6 +4,14 @@
 	    <title>Braintapper Blog</title>
 	    <link>https://www.braintapper.com</link>
 	    <description>Latest articles from the Braintapper Blog</description><item>
+	<title>My SARS-CoV-2/COVID-10 Links article is up</title>
+	<link>https://www.braintapper.com/blog/covid-article-up</link>
+	<description>The mass spread of the SARS-CoV-2 virus in March 2020 effectively changed the world. We are seeing reactions at both extremes - panic and dismissal. Personally, I think a huge part of this is related to communication. The traditional news and media organizations have done a satisfactory job of reporting events, but not as good a job at educating people on just about everything.
+Fortunately, many individuals have stepped up and provided better informative sources than the ones you&#39;ll get by...</description>
+	<pubDate>Fri Mar 20 2020 12:00:00 GMT-0400 (Eastern Daylight Time)</pubDate>
+</item>
+
+<item>
 	<title>Minor Site Update</title>
 	<link>https://www.braintapper.com/blog/minor-site-update</link>
 	<description>Just a minor update to the site. As part of my &quot;continuous improvement&quot; process, I&#39;ve made the site more mobile friendly. It&#39;s not that the first iteration wasn&#39;t viewable on a phone, but the top navigation reflows to different screen sizes more cleanly than in the past.
@@ -105,14 +113,6 @@ find anything that was free (I only need to do the conversion once).
 I ended up searching for an NPM that could extract objects from a PST, and found epfromer&#39;s pst-extractor..
 Using that NPM, I made a simple command line tool for Windows...</description>
 	<pubDate>Mon Jan 06 2020 12:00:00 GMT-0500 (Eastern Standard Time)</pubDate>
-</item>
-
-<item>
-	<title>So I Wrote a Database Migrations NPM</title>
-	<link>https://www.braintapper.com/blog/pg-forward-migrations</link>
-	<description>I&#39;ve been working on making Docker containers of my personal Nodejs projects lately, and for those that rely on a relational database (namely Postgresql), I wanted to be able to run database migrations on them locally to make updates easier. To be clear, I&#39;m not talking about data migrations, which are a completely different thing.
-For database migrations outside of Ruby on Rails, I&#39;ve been using Liquibase, and more recently, Flyway. They&#39;re both perfectly fine tools, but they...</description>
-	<pubDate>Mon Dec 30 2019 12:00:00 GMT-0500 (Eastern Standard Time)</pubDate>
 </item>
 </channel>
 </rss>

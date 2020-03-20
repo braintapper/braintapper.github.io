@@ -9200,7 +9200,7 @@ pre, code {
 pre {
   font-size: var(--font-s); }
 
-b {
+b, strong {
   font-weight: var(--font-bold); }
 [type="content"] a[href] {
   text-decoration: underline;
@@ -9225,9 +9225,12 @@ b {
     letter-spacing: 0.2px;
     font-weight: 400;
 }
+[type="content"] iframe, .content iframe {
+  margin-top: var(--text-spacing-l);
+  margin-bottom: var(--text-spacing-xxl);
+}
 
-
-[type="content"] h1, .content h1 {
+[type="content"] h1, .content h1{
   margin-top: var(--text-spacing-xxl);
   margin-bottom: var(--text-spacing-xxl); }
 
