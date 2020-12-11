@@ -83,6 +83,13 @@
     "url": "/blog/my-curated-list-of-free-fonts-is-up",
     "timestamp": "2020-03-12T21:00:00.000Z"
   },
+  "cognosserver.log-viewer": {
+    "title": "I Made a Viewer for cognosserver.log Files",
+    "slug": "cognosserver.log-viewer",
+    "type": "blog",
+    "url": "/blog/cognosserver.log-viewer",
+    "timestamp": "2020-12-11T22:00:00.000Z"
+  },
   "covid-info": {
     "title": "SARS-CoV-2/COVID-19 Links",
     "slug": "covid-info",

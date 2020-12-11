@@ -4,6 +4,16 @@
 	    <title>Braintapper Blog</title>
 	    <link>https://www.braintapper.com</link>
 	    <description>Latest articles from the Braintapper Blog</description><item>
+	<title>I Made a Viewer for cognosserver.log Files</title>
+	<link>https://www.braintapper.com/blog/cognosserver.log-viewer</link>
+	<description>I had to go through a cognosserver.log file recently, and boy was it painful.
+There is so much work to separate the wheat from the chaff, and looking at the log file even in a good text editor can make any person&#39;s head explode.
+I&#39;ve made a static web application (here: https://bt-apps.github.io/cognos_log_viewer) that lets you either load a cognosserver.log file, or paste a snippet from a log file into it.
+Once you&#39;ve loaded the log in, it shows you a cleaner view of the log file,...</description>
+	<pubDate>Fri Dec 11 2020 17:00:00 GMT-0500 (Eastern Standard Time)</pubDate>
+</item>
+
+<item>
 	<title>My SARS-CoV-2/COVID-10 Links Article is Up</title>
 	<link>https://www.braintapper.com/blog/covid-article-up</link>
 	<description>The mass spread of the SARS-CoV-2 virus in March 2020 effectively changed the world. We are seeing reactions at both extremes - panic and dismissal. Personally, I think a huge part of this is related to communication. The traditional news and media organizations have done a satisfactory job of reporting events, but not as good a job at educating people on just about everything.
@@ -102,17 +112,6 @@ My Favorite Self-Hosted Applications - This is a list of mostly Docker container
 
 I have a queue of other useful articles on their...</description>
 	<pubDate>Mon Jan 06 2020 12:02:00 GMT-0500 (Eastern Standard Time)</pubDate>
-</item>
-
-<item>
-	<title>Convert an Outlook PST to JSON</title>
-	<link>https://www.braintapper.com/blog/converting-an-outlook-pst-to-json</link>
-	<description>I had to archive an Outlook mailbox to a PST file recently, but I&#39;m not a huge fan of using Outlook for finding e-mails.
-I looked around for tools that would convert a PST to JSON so I could load my data into something like Postgresql, but I didn&#39;t
-find anything that was free (I only need to do the conversion once).
-I ended up searching for an NPM that could extract objects from a PST, and found epfromer&#39;s pst-extractor..
-Using that NPM, I made a simple command line tool for Windows...</description>
-	<pubDate>Mon Jan 06 2020 12:00:00 GMT-0500 (Eastern Standard Time)</pubDate>
 </item>
 </channel>
 </rss>
