@@ -4,6 +4,15 @@
 	    <title>Braintapper Blog</title>
 	    <link>https://www.braintapper.com</link>
 	    <description>Latest articles from the Braintapper Blog</description><item>
+	<title>Cognos Bug of the Day</title>
+	<link>https://www.braintapper.com/blog/cognos-bug-of-the-day-2021-02-04</link>
+	<description>Experienced a nice juicy user interface bug in the Administration Console today. It&#39;s pretty obscure and specific, but knowing about it will prevent you from chasing down the wrong paths in terms of root cause analysis.
+This little UI issue is a sanity breaker though, as it will have you second guessing what you did.
+Standard checkbox behaviour in a web browser is that clicking on the label for a checkbox will toggle its state from checked to unchecked and vice versa. Since the label is...</description>
+	<pubDate>Thu Feb 04 2021 12:30:00 GMT-0500 (Eastern Standard Time)</pubDate>
+</item>
+
+<item>
 	<title>I Made a Viewer for cognosserver.log Files</title>
 	<link>https://www.braintapper.com/blog/cognosserver.log-viewer</link>
 	<description>I had to go through a cognosserver.log file recently, and boy was it painful.
@@ -99,19 +108,6 @@ If your words can be perceived in different ways, they&#39;ll be understood in t
 ...
 Write at the...</description>
 	<pubDate>Fri Jan 10 2020 12:04:00 GMT-0500 (Eastern Standard Time)</pubDate>
-</item>
-
-<item>
-	<title>Check out my Articles</title>
-	<link>https://www.braintapper.com/blog/check-out-my-articles-section</link>
-	<description>As mentioned in my first post, I have an Articles section on the site where I&#39;ll be posting evergreen articles that will continue to be updated over time.
-I have two articles in place now:
-
-The Windows Software I use to Stay Productive - This is a list of software that I recommend for Windows users.
-My Favorite Self-Hosted Applications - This is a list of mostly Docker containers (for now) that I recommend running in your own environment.
-
-I have a queue of other useful articles on their...</description>
-	<pubDate>Mon Jan 06 2020 12:02:00 GMT-0500 (Eastern Standard Time)</pubDate>
 </item>
 </channel>
 </rss>
