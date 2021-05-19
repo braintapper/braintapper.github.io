@@ -1,1 +1,0 @@
-import{a,b as s,c as t,d as n,i,e as r,S as l,s as u}from"./index.673d8a76.js";export default(function(e){function o(a){var l;return s(this,o),l=t(this,n(o).call(this)),i(r(l),a,null,null,u,{}),l}return a(o,l),o}());
