@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	    <title>Braintapper Blog</title>
+	    <link>https://www.braintapper.com</link>
+	    <description>Latest articles from the Braintapper Blog</description><item>
+	<title>Cognos Bug of the Day</title>
+	<link>https://www.braintapper.com/blog/cognos-bug-of-the-day-2021-02-04</link>
+	<description>Experienced a nice juicy user interface bug in the Administration Console today. It&#39;s pretty obscure and specific, but knowing about it will prevent you from chasing down the wrong paths in terms of root cause analysis.
+This little UI issue is a sanity breaker though, as it will have you second guessing what you did.
+Standard checkbox behaviour in a web browser is that clicking on the label for a checkbox will toggle its state from checked to unchecked and vice versa. Since the label is...</description>
+	<pubDate>Thu Feb 04 2021 12:30:00 GMT-0500 (Eastern Standard Time)</pubDate>
+</item>
+
+<item>
+	<title>I Made a Viewer for cognosserver.log Files</title>
+	<link>https://www.braintapper.com/blog/cognosserver.log-viewer</link>
+	<description>I had to go through a cognosserver.log file recently, and boy was it painful.
+There is so much work to separate the wheat from the chaff, and looking at the log file even in a good text editor can make any person&#39;s head explode.
+I&#39;ve made a static web application (here: https://bt-apps.github.io/cognos_log_viewer) that lets you either load a cognosserver.log file, or paste a snippet from a log file into it.
+Once you&#39;ve loaded the log in, it shows you a cleaner view of the log file,...</description>
+	<pubDate>Fri Dec 11 2020 17:00:00 GMT-0500 (Eastern Standard Time)</pubDate>
+</item>
+
+<item>
+	<title>My SARS-CoV-2/COVID-10 Links Article is Up</title>
+	<link>https://www.braintapper.com/blog/covid-article-up</link>
+	<description>The mass spread of the SARS-CoV-2 virus in March 2020 effectively changed the world. We are seeing reactions at both extremes - panic and dismissal. Personally, I think a huge part of this is related to communication. The traditional news and media organizations have done a satisfactory job of reporting events, but not as good a job at educating people on just about everything.
+Fortunately, many individuals have stepped up and provided better informative sources than the ones you&#39;ll get by...</description>
+	<pubDate>Fri Mar 20 2020 12:00:00 GMT-0400 (Eastern Daylight Time)</pubDate>
+</item>
+
+<item>
+	<title>Minor Site Update</title>
+	<link>https://www.braintapper.com/blog/minor-site-update</link>
+	<description>Just a minor update to the site. As part of my &quot;continuous improvement&quot; process, I&#39;ve made the site more mobile friendly. It&#39;s not that the first iteration wasn&#39;t viewable on a phone, but the top navigation reflows to different screen sizes more cleanly than in the past.
+There are some minor UI changes, as the Search box has been reskinned.
+I&#39;ve integrated my &quot;standard&quot; Svelte stylesheet into the site. Gotta eat your own dogfood, as they say.
+</description>
+	<pubDate>Wed Mar 18 2020 21:30:00 GMT-0400 (Eastern Daylight Time)</pubDate>
+</item>
+
+<item>
+	<title>My Curated List of Free Fonts is Up</title>
+	<link>https://www.braintapper.com/blog/my-curated-list-of-free-fonts-is-up</link>
+	<description>An important part of any web developer/report designers tool chest is a good set of fonts.
+I&#39;ve posted a new article entitled My Favorite Free Fonts in the Articles section of my site.
+Not everyone (myself included) can afford to license a typeface like Avenir Next, Proxima Nova or Gotham, so I&#39;ve compiled a set of go-to fonts that I use in my projects.
+The article is organized by download site and then categorized by type.
+Of the list, my favorite fonts are:
+
+Sans Serif: Nunito Sans,...</description>
+	<pubDate>Thu Mar 12 2020 17:00:00 GMT-0400 (Eastern Daylight Time)</pubDate>
+</item>
+
+<item>
+	<title>It's 2020 and I'm <i>Still</i> Using Coffeescript</title>
+	<link>https://www.braintapper.com/blog/its-2020-and-im-still-using-coffeescript</link>
+	<description>Get Off My Lawn
+I find that technical choices can be an especially polarizing topic among techies, especially with the newer generation.
+While tech has never been immune from the &quot;smartest guy in the room&quot; syndrome, programming language debates can often be fatiguing to watch, and soul sucking to engage in.
+So here&#39;s my old geezer &quot;you don&#39;t know how good you have it&quot; lecture. When I was coming up in the tech industry three decades ago, there were only a handful of...</description>
+	<pubDate>Tue Mar 10 2020 12:00:00 GMT-0400 (Eastern Daylight Time)</pubDate>
+</item>
+
+<item>
+	<title>Clips vs. Notes</title>
+	<link>https://www.braintapper.com/blog/clips-versus-notes</link>
+	<description>All-in-one software tools can be very useful, as they can consolidate multiple functions while minimizing window proliferation, etc.
+For example, I recently got introduced to a nifty (albeit unfortunately named) little tool called Snowflake, which lets me have terminal windows and an SFTP file browser contained within a single window. While imperfect, I find it works better for me than using WinSCP.
+Snowflake, however, is a utility.  All-in-one applications in other contexts may not offer the...</description>
+	<pubDate>Tue Feb 04 2020 12:00:00 GMT-0500 (Eastern Standard Time)</pubDate>
+</item>
+
+<item>
+	<title>Apps > Install This Site as an App</title>
+	<link>https://www.braintapper.com/blog/apps-install-this-site-as-an-app</link>
+	<description>Confessions of a Tab Hoarder
+I&#39;ve been using Edge Chromium as my primary browser on Windows for quite some time now, and I like it a lot. In the past few months, I don&#39;t think I&#39;ve opened up Chrome on Windows except by mistake. Honestly, I don&#39;t miss Chrome at all.
+I&#39;ve always had a bad habit of having too many tabs open (often more than 50). More often than not, instead of trying to find an existing tab, I&#39;ll just open a duplicate, which exacerbates my problem.
+Roll Your...</description>
+	<pubDate>Wed Jan 29 2020 11:45:00 GMT-0500 (Eastern Standard Time)</pubDate>
+</item>
+
+<item>
+	<title>Dropbox Paper Is Surprisingly Good</title>
+	<link>https://www.braintapper.com/blog/dropbox-paper-is-surprisingly-good</link>
+	<description>Note Taking Hell
+It&#39;s no secret that I&#39;ve been hunting for the &quot;perfect&quot; note taking application for years now.
+I dropped Evernote a few years ago as a multi-purpose tool, and have been trying to find a replacement ever since.
+Note taking is a very personal in that you develop some very specific tool and/or process preferences that you don&#39;t really want to compromise on. What works for one person may not work for another.
+My Own Criteria
+For me, my core requirements, in no...</description>
+	<pubDate>Thu Jan 23 2020 16:30:00 GMT-0500 (Eastern Standard Time)</pubDate>
+</item>
+
+<item>
+	<title>Basecamp's Guide To Internal Communication</title>
+	<link>https://www.braintapper.com/blog/basecamps-guide-to-internal-communication</link>
+	<description>Basecamp published their guide to internal communication recently, and it is insightful and excellent.
+Some highlights:
+
+Meetings are the last resort, not the first option.
+...
+If your words can be perceived in different ways, they&#39;ll be understood in the way which does the most harm.
+...
+&quot;Now&quot; is often the wrong time to say what just popped into your head. It&#39;s better to let it filter it through the sieve of time. What&#39;s left is the part worth saying.
+...
+Write at the...</description>
+	<pubDate>Fri Jan 10 2020 12:04:00 GMT-0500 (Eastern Standard Time)</pubDate>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+
+  <title>Braintapper Knowledge Solutions, Inc.</title>
+
+  <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://www.braintapper.com/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon_57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favicon_57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon_72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon_114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon_120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon_152.png">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet">
+  <title>I Made a Viewer for cognosserver.log Files</title>
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-7f064996.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-66573013.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-f7f1e4d4.js">
+		<link rel="modulepreload" href="/./_app/pages/blog/[slug].svelte-6f37e712.js">
+		<link rel="modulepreload" href="/./_app/chunks/Post-29575172.js">
+		<link rel="stylesheet" href="/./_app/assets/start-c550a47d.css">
+		<link rel="stylesheet" href="/./_app/assets/vendor-7788ef20.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-b9f7390a.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-7f064996.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-f7f1e4d4.js"),
+						import("/./_app/pages/blog/[slug].svelte-6f37e712.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/blog/cognosserver.log-viewer",
+						query: new URLSearchParams(""),
+						params: {"slug":"cognosserver.log-viewer"}
+					}
+				}
+			});
+		</script>
+</head>
+
+<body>
+  <!-- The application will be rendered inside this element,
+	     because `src/client.js` references it -->
+
+  <div id="svelte">
+
+
+<header class="svelte-ialh6k"><section class="svelte-ialh6k"><a href="." class="svelte-ialh6k"><img src="/images/Braintapper_Wordmark_color_2020.svg" alt="Braintapper Logo" class="svelte-ialh6k"></a></section>
+  <nav class="svelte-ialh6k"><ul class="svelte-ialh6k"><li class="svelte-ialh6k selected"><a href="/" class="svelte-ialh6k">Home</a></li>
+      <li class="svelte-ialh6k"><a href="/archive" class="svelte-ialh6k">Archive</a></li>
+      <li class="svelte-ialh6k"><a href="/articles" class="svelte-ialh6k">Articles</a></li>
+      <li class="svelte-ialh6k"><a href="/search" class="svelte-ialh6k">Search</a></li>
+  		<li class="svelte-ialh6k"><a href="/pages/about" class="svelte-ialh6k">About</a></li>
+      <li class="svelte-ialh6k"><a href="/rss.xml" target="new" class="svelte-ialh6k">RSS</a></li></ul></nav></header>
+<section class="svelte-bdnsu8">
+
+<article type="content"><header><h1><a rel="prefetch" href="/blog/cognosserver.log-viewer">I Made a Viewer for cognosserver.log Files</a></h1>
+    <h2>December 11, 2020 by Steven Ng</h2></header>
+  <p>I had to go through a <code>cognosserver.log</code> file recently, and boy was it painful.</p>
+<p>There is so much work to separate the wheat from the chaff, and looking at the log file even in a good text editor can make any person&#39;s head explode.</p>
+<p>I&#39;ve made a static web application (here: <a href="https://bt-apps.github.io/cognos_log_viewer">https://bt-apps.github.io/cognos_log_viewer</a>) that lets you either load a <code>cognosserver.log</code> file, or paste a snippet from a log file into it.</p>
+<p>Once you&#39;ve loaded the log in, it shows you a cleaner view of the log file, and you can filter by keyword, or flag log entries to make filtering even easier.</p>
+<p>Note that this app only reads <code>cognosserver.log</code> files. At some point I may make a separate app that reads audit logs, but I was focused at solving the pain point I had at the moment.</p>
+<p>In terms of data storage, none of the log files you load are stored on any server. I use the browser&#39;s built in data store (works similar to a cookie), and I&#39;ve provided a mechanism for you to wipe the database.</p>
+<p>In terms of performance, since everything is running in a browser, the bigger the file, the slower it will be to load and process. Also, I&#39;ve only tested it with Cognos 11.1.x logs. No guarantees it will work on older logs.</p>
+<p>This app wasn&#39;t written to be sold or anything, so I only did a minimal amount of testing and trapping. Keep the old adage of &quot;garbage in, garbage out&quot; in mind when using it.</p>
+<p>You can report issues here: <a href="https://github.com/bt-apps/cognos_log_viewer/issues">https://github.com/bt-apps/cognos_log_viewer/issues</a> but there&#39;s no guarantee I&#39;ll address them, as this was only designed for my specific needs and not be some huge do-it-all application.</p>
+<p>Enjoy!</p>
+</article></section>
+<footer class="svelte-1qwnznr"><p class="svelte-1qwnznr">Hand crafted with <a href="https://svelte.dev/" target="new">Svelte</a>, <a href="https://kit.svelte.dev/" target="new">SvelteKit</a> and <a href="https://lunrjs.com" target="new">Lunr.js</a>. Hosted on <a href="https://pages.github.com/" target="new">Github Pages</a>.  </p>
+  <p class="svelte-1qwnznr">Copyright © 2019-2021 Braintapper Knowledge Solutions, Inc. <a href="/pages/about#privacy">Privacy Policy</a></p></footer>
+
+
+
+	<script type="svelte-data" url="/data/posts/cognosserver.log-viewer.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\n  \"title\": \"I Made a Viewer for cognosserver.log Files\",\n  \"tags\": null,\n  \"publish_date\": \"2020-12-11 17:00\",\n  \"updated_date\": null,\n  \"featured\": false,\n  \"author\": \"Steven Ng\",\n  \"__content\": \"\\r\\nI had to go through a `cognosserver.log` file recently, and boy was it painful.\\r\\n\\r\\nThere is so much work to separate the wheat from the chaff, and looking at the log file even in a good text editor can make any person's head explode.\\r\\n\\r\\nI've made a static web application (here: https:\u002F\u002Fbt-apps.github.io\u002Fcognos_log_viewer) that lets you either load a `cognosserver.log` file, or paste a snippet from a log file into it.\\r\\n\\r\\nOnce you've loaded the log in, it shows you a cleaner view of the log file, and you can filter by keyword, or flag log entries to make filtering even easier.\\r\\n\\r\\nNote that this app only reads `cognosserver.log` files. At some point I may make a separate app that reads audit logs, but I was focused at solving the pain point I had at the moment.\\r\\n\\r\\nIn terms of data storage, none of the log files you load are stored on any server. I use the browser's built in data store (works similar to a cookie), and I've provided a mechanism for you to wipe the database.\\r\\n\\r\\nIn terms of performance, since everything is running in a browser, the bigger the file, the slower it will be to load and process. Also, I've only tested it with Cognos 11.1.x logs. No guarantees it will work on older logs.\\r\\n\\r\\nThis app wasn't written to be sold or anything, so I only did a minimal amount of testing and trapping. Keep the old adage of \\\"garbage in, garbage out\\\" in mind when using it.\\r\\n\\r\\nYou can report issues here: https:\u002F\u002Fgithub.com\u002Fbt-apps\u002Fcognos_log_viewer\u002Fissues but there's no guarantee I'll address them, as this was only designed for my specific needs and not be some huge do-it-all application.\\r\\n\\r\\nEnjoy!\",\n  \"html\": \"\u003Cp\u003EI had to go through a \u003Ccode\u003Ecognosserver.log\u003C\u002Fcode\u003E file recently, and boy was it painful.\u003C\u002Fp\u003E\\n\u003Cp\u003EThere is so much work to separate the wheat from the chaff, and looking at the log file even in a good text editor can make any person&#39;s head explode.\u003C\u002Fp\u003E\\n\u003Cp\u003EI&#39;ve made a static web application (here: \u003Ca href=\\\"https:\u002F\u002Fbt-apps.github.io\u002Fcognos_log_viewer\\\"\u003Ehttps:\u002F\u002Fbt-apps.github.io\u002Fcognos_log_viewer\u003C\u002Fa\u003E) that lets you either load a \u003Ccode\u003Ecognosserver.log\u003C\u002Fcode\u003E file, or paste a snippet from a log file into it.\u003C\u002Fp\u003E\\n\u003Cp\u003EOnce you&#39;ve loaded the log in, it shows you a cleaner view of the log file, and you can filter by keyword, or flag log entries to make filtering even easier.\u003C\u002Fp\u003E\\n\u003Cp\u003ENote that this app only reads \u003Ccode\u003Ecognosserver.log\u003C\u002Fcode\u003E files. At some point I may make a separate app that reads audit logs, but I was focused at solving the pain point I had at the moment.\u003C\u002Fp\u003E\\n\u003Cp\u003EIn terms of data storage, none of the log files you load are stored on any server. I use the browser&#39;s built in data store (works similar to a cookie), and I&#39;ve provided a mechanism for you to wipe the database.\u003C\u002Fp\u003E\\n\u003Cp\u003EIn terms of performance, since everything is running in a browser, the bigger the file, the slower it will be to load and process. Also, I&#39;ve only tested it with Cognos 11.1.x logs. No guarantees it will work on older logs.\u003C\u002Fp\u003E\\n\u003Cp\u003EThis app wasn&#39;t written to be sold or anything, so I only did a minimal amount of testing and trapping. Keep the old adage of &quot;garbage in, garbage out&quot; in mind when using it.\u003C\u002Fp\u003E\\n\u003Cp\u003EYou can report issues here: \u003Ca href=\\\"https:\u002F\u002Fgithub.com\u002Fbt-apps\u002Fcognos_log_viewer\u002Fissues\\\"\u003Ehttps:\u002F\u002Fgithub.com\u002Fbt-apps\u002Fcognos_log_viewer\u002Fissues\u003C\u002Fa\u003E but there&#39;s no guarantee I&#39;ll address them, as this was only designed for my specific needs and not be some huge do-it-all application.\u003C\u002Fp\u003E\\n\u003Cp\u003EEnjoy!\u003C\u002Fp\u003E\\n\",\n  \"timestamp\": \"2020-12-11T22:00:00.000Z\",\n  \"year\": 2020,\n  \"month\": 12,\n  \"month_name\": \"December\",\n  \"day\": 11,\n  \"slug\": \"cognosserver.log-viewer\"\n}\n"}</script>
+</div>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155117606-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-155117606-1');
+  </script>
+  <script src="/js/lunr.min.js"></script>
+</body>
+
+</html>

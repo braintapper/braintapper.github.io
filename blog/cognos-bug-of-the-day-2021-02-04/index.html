@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+
+  <title>Braintapper Knowledge Solutions, Inc.</title>
+
+  <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://www.braintapper.com/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon_57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favicon_57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon_72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon_114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon_120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon_152.png">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet">
+  <title>Cognos Bug of the Day</title>
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-7f064996.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-66573013.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-f7f1e4d4.js">
+		<link rel="modulepreload" href="/./_app/pages/blog/[slug].svelte-6f37e712.js">
+		<link rel="modulepreload" href="/./_app/chunks/Post-29575172.js">
+		<link rel="stylesheet" href="/./_app/assets/start-c550a47d.css">
+		<link rel="stylesheet" href="/./_app/assets/vendor-7788ef20.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-b9f7390a.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-7f064996.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-f7f1e4d4.js"),
+						import("/./_app/pages/blog/[slug].svelte-6f37e712.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/blog/cognos-bug-of-the-day-2021-02-04",
+						query: new URLSearchParams(""),
+						params: {"slug":"cognos-bug-of-the-day-2021-02-04"}
+					}
+				}
+			});
+		</script>
+</head>
+
+<body>
+  <!-- The application will be rendered inside this element,
+	     because `src/client.js` references it -->
+
+  <div id="svelte">
+
+
+<header class="svelte-ialh6k"><section class="svelte-ialh6k"><a href="." class="svelte-ialh6k"><img src="/images/Braintapper_Wordmark_color_2020.svg" alt="Braintapper Logo" class="svelte-ialh6k"></a></section>
+  <nav class="svelte-ialh6k"><ul class="svelte-ialh6k"><li class="svelte-ialh6k selected"><a href="/" class="svelte-ialh6k">Home</a></li>
+      <li class="svelte-ialh6k"><a href="/archive" class="svelte-ialh6k">Archive</a></li>
+      <li class="svelte-ialh6k"><a href="/articles" class="svelte-ialh6k">Articles</a></li>
+      <li class="svelte-ialh6k"><a href="/search" class="svelte-ialh6k">Search</a></li>
+  		<li class="svelte-ialh6k"><a href="/pages/about" class="svelte-ialh6k">About</a></li>
+      <li class="svelte-ialh6k"><a href="/rss.xml" target="new" class="svelte-ialh6k">RSS</a></li></ul></nav></header>
+<section class="svelte-bdnsu8">
+
+<article type="content"><header><h1><a rel="prefetch" href="/blog/cognos-bug-of-the-day-2021-02-04">Cognos Bug of the Day</a></h1>
+    <h2>February 4, 2021 by Steven Ng</h2></header>
+  <p>Experienced a nice juicy user interface bug in the Administration Console today. It&#39;s pretty obscure and specific, but knowing about it will prevent you from chasing down the wrong paths in terms of root cause analysis.</p>
+<p>This little UI issue is a sanity breaker though, as it will have you second guessing what you did.</p>
+<p>Standard checkbox behaviour in a web browser is that <a href="https://svelte.dev/repl/cec15802392e470eb12efc01ac646ab0?version=3.32.1">clicking on the label for a checkbox</a> will toggle its state from checked to unchecked and vice versa. Since the label is usually a much bigger target to click on than the checkbox, you might prefer to click on the label over the checkbox itself. </p>
+<p>In the Cognos Administration console, if you click on a checkbox&#39;s label to <strong>disable</strong> an entry, it works perfectly fine. But if you click on the checkbox&#39;s label to <strong>enable</strong> an item, it doesn&#39;t save the change. Note that the &quot;Hide this entry&quot; checkbox value saves fine, so it is isolated to the &quot;Disable this entry&quot; checkbox label.</p>
+<br/>
+<img src="/images/2021/02/Cognos_Disable_Checkbox.png" alt="Cognos Properties Page">
+
+
+<p>Your first thought is likely to be &quot;Well, this feature has been around forever, they&#39;ve tested all edge cases. It can&#39;t be a UI bug, since I did the same thing to enable it and it worked.&quot;  You might be thinking maybe it&#39;s a permissions or capabilities issue. Surprise, surprise, it is indeed a user interface bug (reproducible in 11.1.7 and 11.1.4).</p>
+<p>So let me save you a bit of time hunting this issue down, because searching for &quot;Cognos 11 can&#39;t enable printer&quot; or whichever item you&#39;re trying to enable probably won&#39;t give you a very good result (unless this blog post shows up, haha).</p>
+<p>Lucky for us, there is a workaround. You can re-enable the item by clicking on <strong>the checkbox itself</strong> and then saving. </p>
+<p>I&#39;m not in the habit of figuring out someone else&#39;s bugs, but curiosity got the best of me, so I looked at the markup in my browser&#39;s developer tools. If you&#39;re not into coding, you&#39;ll probably want to skip the next bit and be on your merry way.</p>
+<p>It looks like the checkbox is inside a table, and when you click outside of the checkbox, the <code>&lt;table&gt;</code> tag has an <code>onclick</code> event that changes state of the checkbox (it wasn&#39;t the label after all). The problem is that the value is tracked not in the checkbox control, but in a hidden text field (which is storing the value being saved to the content store), and that field isn&#39;t changed to <code>false</code> when the &quot;Disable this entry&quot; checkbox is checked (it is for the &quot;Hide this Entry&quot; table click though).</p>
+<p>I&#39;m sure the markup is quite old (the heavy use of tables is a good indicator), as backwards compatibility with Internet Explorer is still a thing in the enterprise world, even today. Having said that, by modern web coding standards, the amount of code being used to manage a boolean state on a checkbox is absolutely bonkers.</p>
+</article></section>
+<footer class="svelte-1qwnznr"><p class="svelte-1qwnznr">Hand crafted with <a href="https://svelte.dev/" target="new">Svelte</a>, <a href="https://kit.svelte.dev/" target="new">SvelteKit</a> and <a href="https://lunrjs.com" target="new">Lunr.js</a>. Hosted on <a href="https://pages.github.com/" target="new">Github Pages</a>.  </p>
+  <p class="svelte-1qwnznr">Copyright © 2019-2021 Braintapper Knowledge Solutions, Inc. <a href="/pages/about#privacy">Privacy Policy</a></p></footer>
+
+
+
+	<script type="svelte-data" url="/data/posts/cognos-bug-of-the-day-2021-02-04.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\n  \"title\": \"Cognos Bug of the Day\",\n  \"tags\": null,\n  \"publish_date\": \"2021-02-04 12:30\",\n  \"updated_date\": null,\n  \"featured\": false,\n  \"author\": \"Steven Ng\",\n  \"__content\": \"\\r\\n\\r\\nExperienced a nice juicy user interface bug in the Administration Console today. It's pretty obscure and specific, but knowing about it will prevent you from chasing down the wrong paths in terms of root cause analysis.\\r\\n\\r\\nThis little UI issue is a sanity breaker though, as it will have you second guessing what you did.\\r\\n\\r\\nStandard checkbox behaviour in a web browser is that [clicking on the label for a checkbox](https:\u002F\u002Fsvelte.dev\u002Frepl\u002Fcec15802392e470eb12efc01ac646ab0?version=3.32.1) will toggle its state from checked to unchecked and vice versa. Since the label is usually a much bigger target to click on than the checkbox, you might prefer to click on the label over the checkbox itself. \\r\\n\\r\\nIn the Cognos Administration console, if you click on a checkbox's label to **disable** an entry, it works perfectly fine. But if you click on the checkbox's label to **enable** an item, it doesn't save the change. Note that the \\\"Hide this entry\\\" checkbox value saves fine, so it is isolated to the \\\"Disable this entry\\\" checkbox label.\\r\\n\\r\\n\\r\\n\u003Cbr\u002F\u003E\\r\\n\u003Cimg src=\\\"\u002Fimages\u002F2021\u002F02\u002FCognos_Disable_Checkbox.png\\\" alt=\\\"Cognos Properties Page\\\"\u003E\\r\\n\\r\\n\\r\\nYour first thought is likely to be \\\"Well, this feature has been around forever, they've tested all edge cases. It can't be a UI bug, since I did the same thing to enable it and it worked.\\\"  You might be thinking maybe it's a permissions or capabilities issue. Surprise, surprise, it is indeed a user interface bug (reproducible in 11.1.7 and 11.1.4).\\r\\n\\r\\nSo let me save you a bit of time hunting this issue down, because searching for \\\"Cognos 11 can't enable printer\\\" or whichever item you're trying to enable probably won't give you a very good result (unless this blog post shows up, haha).\\r\\n\\r\\nLucky for us, there is a workaround. You can re-enable the item by clicking on **the checkbox itself** and then saving. \\r\\n\\r\\nI'm not in the habit of figuring out someone else's bugs, but curiosity got the best of me, so I looked at the markup in my browser's developer tools. If you're not into coding, you'll probably want to skip the next bit and be on your merry way.\\r\\n\\r\\nIt looks like the checkbox is inside a table, and when you click outside of the checkbox, the `\u003Ctable\u003E` tag has an `onclick` event that changes state of the checkbox (it wasn't the label after all). The problem is that the value is tracked not in the checkbox control, but in a hidden text field (which is storing the value being saved to the content store), and that field isn't changed to `false` when the \\\"Disable this entry\\\" checkbox is checked (it is for the \\\"Hide this Entry\\\" table click though).\\r\\n\\r\\nI'm sure the markup is quite old (the heavy use of tables is a good indicator), as backwards compatibility with Internet Explorer is still a thing in the enterprise world, even today. Having said that, by modern web coding standards, the amount of code being used to manage a boolean state on a checkbox is absolutely bonkers.\\r\\n\",\n  \"html\": \"\u003Cp\u003EExperienced a nice juicy user interface bug in the Administration Console today. It&#39;s pretty obscure and specific, but knowing about it will prevent you from chasing down the wrong paths in terms of root cause analysis.\u003C\u002Fp\u003E\\n\u003Cp\u003EThis little UI issue is a sanity breaker though, as it will have you second guessing what you did.\u003C\u002Fp\u003E\\n\u003Cp\u003EStandard checkbox behaviour in a web browser is that \u003Ca href=\\\"https:\u002F\u002Fsvelte.dev\u002Frepl\u002Fcec15802392e470eb12efc01ac646ab0?version=3.32.1\\\"\u003Eclicking on the label for a checkbox\u003C\u002Fa\u003E will toggle its state from checked to unchecked and vice versa. Since the label is usually a much bigger target to click on than the checkbox, you might prefer to click on the label over the checkbox itself. \u003C\u002Fp\u003E\\n\u003Cp\u003EIn the Cognos Administration console, if you click on a checkbox&#39;s label to \u003Cstrong\u003Edisable\u003C\u002Fstrong\u003E an entry, it works perfectly fine. But if you click on the checkbox&#39;s label to \u003Cstrong\u003Eenable\u003C\u002Fstrong\u003E an item, it doesn&#39;t save the change. Note that the &quot;Hide this entry&quot; checkbox value saves fine, so it is isolated to the &quot;Disable this entry&quot; checkbox label.\u003C\u002Fp\u003E\\n\u003Cbr\u002F\u003E\\n\u003Cimg src=\\\"\u002Fimages\u002F2021\u002F02\u002FCognos_Disable_Checkbox.png\\\" alt=\\\"Cognos Properties Page\\\"\u003E\\n\\n\\n\u003Cp\u003EYour first thought is likely to be &quot;Well, this feature has been around forever, they&#39;ve tested all edge cases. It can&#39;t be a UI bug, since I did the same thing to enable it and it worked.&quot;  You might be thinking maybe it&#39;s a permissions or capabilities issue. Surprise, surprise, it is indeed a user interface bug (reproducible in 11.1.7 and 11.1.4).\u003C\u002Fp\u003E\\n\u003Cp\u003ESo let me save you a bit of time hunting this issue down, because searching for &quot;Cognos 11 can&#39;t enable printer&quot; or whichever item you&#39;re trying to enable probably won&#39;t give you a very good result (unless this blog post shows up, haha).\u003C\u002Fp\u003E\\n\u003Cp\u003ELucky for us, there is a workaround. You can re-enable the item by clicking on \u003Cstrong\u003Ethe checkbox itself\u003C\u002Fstrong\u003E and then saving. \u003C\u002Fp\u003E\\n\u003Cp\u003EI&#39;m not in the habit of figuring out someone else&#39;s bugs, but curiosity got the best of me, so I looked at the markup in my browser&#39;s developer tools. If you&#39;re not into coding, you&#39;ll probably want to skip the next bit and be on your merry way.\u003C\u002Fp\u003E\\n\u003Cp\u003EIt looks like the checkbox is inside a table, and when you click outside of the checkbox, the \u003Ccode\u003E&lt;table&gt;\u003C\u002Fcode\u003E tag has an \u003Ccode\u003Eonclick\u003C\u002Fcode\u003E event that changes state of the checkbox (it wasn&#39;t the label after all). The problem is that the value is tracked not in the checkbox control, but in a hidden text field (which is storing the value being saved to the content store), and that field isn&#39;t changed to \u003Ccode\u003Efalse\u003C\u002Fcode\u003E when the &quot;Disable this entry&quot; checkbox is checked (it is for the &quot;Hide this Entry&quot; table click though).\u003C\u002Fp\u003E\\n\u003Cp\u003EI&#39;m sure the markup is quite old (the heavy use of tables is a good indicator), as backwards compatibility with Internet Explorer is still a thing in the enterprise world, even today. Having said that, by modern web coding standards, the amount of code being used to manage a boolean state on a checkbox is absolutely bonkers.\u003C\u002Fp\u003E\\n\",\n  \"timestamp\": \"2021-02-04T17:30:00.000Z\",\n  \"year\": 2021,\n  \"month\": 2,\n  \"month_name\": \"February\",\n  \"day\": 4,\n  \"slug\": \"cognos-bug-of-the-day-2021-02-04\"\n}\n"}</script>
+</div>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155117606-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-155117606-1');
+  </script>
+  <script src="/js/lunr.min.js"></script>
+</body>
+
+</html>
